@@ -1,17 +1,23 @@
 let loader = document.querySelector('.loader');
 let nav = document.querySelector('.site-nav');
-// let uni = document.getElementsByTagName('*');
 
-window.addEventListener('load', function () {
-    loader.style.display = 'none';
-    nav.style.zIndex = '100';
-    var allElements = document.getElementsByTagName("*");
-    for (var i = 0, len = allElements.length; i < len; i++) {
-        var element = allElements[i];
-        element.style.overflowY = 'visible';
-    }
+function timeToHome() {
 
-})
+    setTimeout(() => {
+        loader.style.display = 'none';
+        nav.style.zIndex = '100';
+        var allElements = document.getElementsByTagName("*");
+        for (var i = 0, len = allElements.length; i < len; i++) {
+            var element = allElements[i];
+            element.style.overflowY = 'visible';
+        }
+
+    }, 4000);
+
+}
+
+window.addEventListener('load', timeToHome());
+
 
 window.onload = function () {
 
