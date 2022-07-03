@@ -46,3 +46,60 @@ window.onload = function () {
     }
     window.scrollTo(0, 0);
 }
+
+ let hamburger = document.querySelector('.site-hamburger');
+        let mobileNav = document.querySelector('.site-mobi-nav');
+
+        hamburger.addEventListener('click', function () {
+            if (mobileNav.style.display === 'none') {
+                mobileNav.style.display = 'block';
+            } else {
+                mobileNav.style.display = 'none';
+            }
+        })
+
+
+        let dropIcon1 = document.querySelector('#drop-icon-1');
+        let dropIcon2 = document.querySelector('#drop-icon-2');
+        let dropIcon3 = document.querySelector('#drop-icon-3');
+        let dropIcon4 = document.querySelector('#drop-icon-4');
+
+
+        let dropDeepNav1 = document.querySelector('.mobi-drop-div-1');
+        let dropDeepNav2 = document.querySelector('.mobi-drop-div-2');
+        let dropDeepNav3 = document.querySelector('.mobi-drop-div-3');
+        let dropDeepNav4 = document.querySelector('.mobi-drop-div-4');
+
+
+        dropIcon1.addEventListener('click', function () {
+            if (dropDeepNav1.style.display === 'none') {
+                dropDeepNav1.style.display = 'block';
+            } else {
+                dropDeepNav1.style.display = 'none';
+            }
+        })
+
+
+        dropIcon2.addEventListener('click', function () {
+            if (dropDeepNav2.style.display === 'none') {
+                dropDeepNav2.style.display = 'block';
+            } else {
+                dropDeepNav2.style.display = 'none';
+            }
+        })
+
+        dropIcon3.addEventListener('click', function () {
+            if (dropDeepNav3.style.display === 'none') {
+                dropDeepNav3.style.display = 'block';
+            } else {
+                dropDeepNav3.style.display = 'none';
+            }
+        })
+
+        dropIcon4.addEventListener('click', function () {
+            if (dropDeepNav4.style.display === 'none') {
+                dropDeepNav4.style.display = 'block';
+            } else {
+                dropDeepNav4.style.display = 'none';
+            }
+        })
