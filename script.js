@@ -12,7 +12,7 @@ function timeToHome() {
             element.style.overflowY = 'visible';
         }
 
-    }, 2500);
+    }, 2510);
 
 }
 
